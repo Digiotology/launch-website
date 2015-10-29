@@ -668,6 +668,9 @@ a {
     width: 57.35098%; }
     #footer ul .contact:last-child {
       margin-right: 0; }
+  #footer ul address,
+  #footer ul .direct a {
+    line-height: 2; }
   #footer ul h1 {
     font-size: 1.5em;
     margin-top: 5rem; }

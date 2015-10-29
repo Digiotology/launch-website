@@ -1,0 +1,115 @@
+.new-search .hero {
+	padding-bottom: 0;
+	input {
+		margin-bottom: 2.5em;
+	}
+	input[type="text"] {
+		@extend %text-box;
+		z-index: -1;
+		background: transparent;
+	}
+	input[type="submit"] {
+		@extend %button;
+		width: 100%;
+		margin-top: 1.5em;
+	}
+}
+
+.wh-search-results {
+	@include outer-container;
+	padding: 0 1.5em;
+	> dt {
+		@include span-columns(12);
+		font-size: 1.25em;
+		color: $grey-dark;
+		margin: 1.5rem 0;
+	}
+	dl {
+		margin-bottom: 0;
+	}
+	dd {
+		margin-left: 0;
+		margin-bottom: 2em;
+		a {
+			color: $grey-dark;
+		}
+		h2 {
+			font-size: 1em;
+			margin-bottom: 0;
+		}
+		.wh-search-body {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	.wh-search-term {
+		@extend %font-head;
+		color: $secondary;
+	}
+	.wh-search-url {
+		display: none;
+	}
+}
+
+ul.wh-search-paginate {
+	@include outer-container;
+	margin-top: 0;
+	margin-bottom: 2.5em;
+	li {
+		list-style-type: none;
+		display: inline;
+		padding-right: 1em;
+		a {
+			@extend %font-head;
+			color: $grey-dark;
+			text-decoration: none;
+		}
+		&.active a {
+			color: $secondary;
+		}
+	}
+}
+
+.wh-search-error {
+	@include span-columns(12 of 12);
+	padding: 1.5em;
+}
+
+@media screen and (min-width: $tablet) {
+	.new-search .hero {
+		.wrapper {
+			padding: 0 2.5em;
+		}
+		input[type="text"] {
+			@include span-columns(9 of 12);
+			padding-top: 0.75em;
+		}
+		input[type="submit"] {
+			@include span-columns(3 of 12);
+			margin-top: 2px;
+		}
+	}
+	.wh-search-results {
+		padding: 0 2.5em;
+		> dt {
+			margin-bottom: 2em;
+		}
+		dd {
+			h2 {
+				font-size: 1.5em;
+				margin-bottom: 0.25em;
+			}
+			&:last-child {
+				margin-bottom: 2.5em;
+			}
+		}
+	}
+	ul.wh-search-paginate {
+		padding: 0 2.5em;
+	}
+}

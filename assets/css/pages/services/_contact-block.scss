@@ -1,0 +1,74 @@
+.contact-block {
+	@include span-columns(12);
+	background: $secondary;
+	color: white;
+	h2 {
+
+	}
+	ul {
+		padding-left: 0;
+		li {
+			list-style-type: none;
+			a {
+				@extend %button;
+				background: white;
+				color: $secondary;
+				display: block;
+				margin-bottom: 2em;
+				text-align: center;
+				box-shadow: 0px 2px 0px $grey-light;
+				&:hover {
+					background: $grey-light;
+				}
+			}
+		}
+	}
+	.callback {
+		margin-bottom: 1.5em;
+		form {
+			input {
+				display: block;
+				width: 100%;
+				&[type="text"] {
+					@extend %text-box;
+					background: transparent;
+					color: white;
+					border-color: white;
+					@include placeholder {
+						color: white;
+					}
+					&:active,
+					&:focus {
+						border-color: white;
+					}
+				}
+				&[type="submit"] {
+					@extend %button;
+					display: block;
+					margin-top: 0.75em;
+					background: white;
+					box-shadow: 0px 2px 0px $grey-light;
+					color: $secondary;
+					&:hover {
+						background: $grey-light;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.contact-block {
+		padding: 1em;
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.contact-block {
+		ul li {
+			@include span-columns(4 of 12);
+			@include omega(3n);
+		}
+	}
+}

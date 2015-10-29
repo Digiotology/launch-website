@@ -1,0 +1,49 @@
+%list {
+	h2 {
+		text-align: left;
+		color: $grey-dark;
+	}
+	ul {
+		@include span-columns(12);
+		padding-left: 0;
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+		display: block;
+		li {
+			list-style-type: none;
+			@include span-columns(12);
+			img {
+				@include span-columns(1.5 of 12);
+				margin-bottom: 1em;
+			}
+			.inner {
+				@include span-columns(10 of 12);
+				@include shift(0.5 of 12);
+				h3 {
+					margin-top: 0;
+					font-size: 1em;
+					margin-bottom: 0;
+					color: $accent;
+				}
+				p {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	%list {
+		ul {
+			li {
+				@include span-columns(6 of 12);
+				@include omega(2n);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop) {
+
+}

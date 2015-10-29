@@ -1,0 +1,50 @@
+.team {
+	@extend %list;
+	ul li {
+		img {
+
+		}
+		.inner {
+			p {
+				color: black;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.team {
+		padding: 0 2.5em;
+		ul {
+			li {
+				img {
+					@include span-columns(12 of 12);
+				}
+				.inner {
+					@include span-columns(12 of 12);
+					@include shift(0);
+					margin-top: 1em;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop) {
+	.team {
+		margin-bottom: 2.5em;
+		ul {
+			li {
+				@include span-columns(3 of 12);
+				@include omega-reset(2n);
+				@include omega(4n);
+				.inner {
+					margin-top: 0.5em;
+					p {
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+}

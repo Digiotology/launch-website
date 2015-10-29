@@ -1,0 +1,35 @@
+%button {
+	@extend %font-head;
+	padding: 0.75em 1em;
+	background: $grey-light;
+	color: $secondary;
+	text-decoration: none;
+	// box-shadow: 0px 2px 0px darken($secondary, 10%);
+	box-shadow: 0px 2px 0px darken($grey-light, 10%);
+	border: 0;
+	border-radius: 0;
+	&:hover {
+		background: darken($grey-light, 10%);
+	}
+	&:active {
+		box-shadow: 0px 0px 0px darken($grey-light, 10%);
+		top: 2px;
+		position: relative;
+		outline: 0;
+	}
+}
+
+%button-bar {
+	text-align: left; 
+	a.btn {
+		@extend %button;
+		display: inline-block;
+		margin: 0 0.5em;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	@media screen and (min-width: $tablet) {
+		text-align: left;
+	}
+}

@@ -533,6 +533,12 @@ a {
           margin-right: 0; }
         #why ul nav li h2 {
           margin-bottom: 0; }
+        #why ul nav li.active svg path,
+        #why ul nav li.active svg g,
+        #why ul nav li.active svg line,
+        #why ul nav li.active svg circle,
+        #why ul nav li.active svg polyline {
+          stroke: #05bcd9; }
         #why ul nav li.active h2 {
           color: #05bcd9 !important; }
     #why ul .content li {
@@ -567,7 +573,10 @@ a {
     #process ul li .content {
       width: 70%; }
       #process ul li .content h2 {
-        margin: 0; }
+        margin: 0;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
       #process ul li .content h3 {
         margin: 0.5em 0;
         font-family: "Roboto", sans-serif; }
@@ -581,11 +590,38 @@ a {
       justify-content: flex-end; }
       #process ul li .icon img {
         height: 125px; }
+      #process ul li .icon svg {
+        height: 125px; }
+        #process ul li .icon svg path,
+        #process ul li .icon svg g,
+        #process ul li .icon svg line,
+        #process ul li .icon svg circle,
+        #process ul li .icon svg polyline,
+        #process ul li .icon svg polygon {
+          stroke: #333;
+          -webkit-transition: all 0.15s ease-out 0s;
+          -moz-transition: all 0.15s ease-out 0s;
+          transition: all 0.15s ease-out 0s; }
     #process ul li:nth-child(even) .content {
       order: 2; }
     #process ul li:nth-child(even) .icon {
       order: 1;
       justify-content: flex-start; }
+    #process ul li.active .content h2 {
+      color: #522f91;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+    #process ul li.active .icon svg path,
+    #process ul li.active .icon svg g,
+    #process ul li.active .icon svg line,
+    #process ul li.active .icon svg circle,
+    #process ul li.active .icon svg polyline,
+    #process ul li.active .icon svg polygon {
+      stroke: #05bcd9;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
 
 #footer {
   max-width: 64rem;

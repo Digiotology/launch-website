@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="64px" height="64px" viewBox="153 2484 64 64" overflow="visible" enable-background="new 153 2484 64 64"
+	 xml:space="preserve">
+<defs>
+</defs>
+<rect display="none" fill="#F1F2F2" width="590" height="7500"/>
+<rect x="153" y="2484" display="none" fill="#A7A9AC" width="64" height="64"/>
+<path fill="none" stroke="#414042" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M202.423,2505.604c2.462,3.873,3.889,8.469,3.889,13.396c0,13.807-11.192,25-25,25s-25-11.193-25-25s11.192-25,25-25
+	c4.922,0,9.511,1.422,13.379,3.878"/>
+<path fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M196.758,2509.752c1.622,2.703,2.554,5.866,2.554,9.248c0,9.941-8.058,18-18,18s-18-8.059-18-18s8.058-18,18-18
+	c3.179,0,6.165,0.824,8.756,2.27"/>
+<path fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M192.222,2513.995c0.7,1.523,1.09,3.219,1.09,5.005c0,6.627-5.372,12-12,12s-12-5.373-12-12s5.372-12,12-12
+	c1.782,0,3.474,0.389,4.995,1.086"/>
+<circle fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="181.312" cy="2519" r="5"/>
+<line fill="none" stroke="#414042" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="209.812" y1="2490.5" x2="181.812" y2="2518.5"/>
+<polyline fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	199.312,2501 199.312,2493.188 207.187,2485.375 207.187,2491.938 "/>
+<polyline fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	199.375,2501 207.187,2501 215,2493.125 208.437,2493.125 "/>
+</svg>

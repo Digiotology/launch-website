@@ -38,6 +38,10 @@
 
 // Hero
 
+	* {
+		line-height: 2;
+	}
+
 	#hero {
 		padding: $padding * 2 $padding;
 		position: relative;

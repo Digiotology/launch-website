@@ -3,7 +3,7 @@
 	background: $grey-light;
 	blockquote {
 		@include outer-container;
-		padding: 1.5em;
+		padding: 2.5em;
 		margin-top: 0;
 		margin-bottom: 0;
 		img {
@@ -17,14 +17,6 @@
 				content: "-";
 				margin-right: 0.5em;
 			}
-		}
-	}
-}
-
-@media screen and (min-width: $tablet) {
-	.testimonial {
-		blockquote {
-			padding: 2.5em;
 		}
 	}
 }

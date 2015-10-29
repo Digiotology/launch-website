@@ -271,3 +271,122 @@
 			margin-bottom: 2.5em;
 		}
 	}
+
+	@media screen and (max-width: 680px) {
+		#hero {
+			padding: 2.5rem;
+			a.nn {
+				display: none;
+			}
+			.logo {
+				height: 5rem;
+			}
+			h1 {
+				font-size: 1.75em;
+			}
+		}
+
+		#navbar {
+			a.logo img {
+				margin: 0 auto;
+				display: block;
+				float: none;
+			}
+			ul {
+				display: none;
+			}
+		}
+		#why {
+			h1 {
+				font-size: 1.75em;
+			}
+			ul nav {
+				li {
+					@include span-columns(12);
+					margin-bottom: 2.5em;
+					h2 {
+						font-size: 1.25em;
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.content {
+				display: none;
+			}
+		}
+
+		#process {
+			ul {
+				li {
+					flex-direction: column;
+					.icon {
+						order: 1;
+						width: 100%;
+						justify-content: center !important;
+					}
+					.content {
+						order: 2;
+						width: 100%;
+						text-align: center;
+						h2 {
+							margin-top: 1em;
+						}
+					}
+				}
+			}
+		}
+		
+		#footer {
+			padding: 2.5em;
+			* {
+				text-align: center;
+			}
+			ul {
+				padding-left: 0;
+				h1 {
+					margin-top: 2.5em;
+				}
+			}
+			ul > * li {
+				@include span-columns(6 of 6);
+
+			}
+			ul .addresses,
+			ul .contact {
+				@include span-columns(12);
+			}
+			.london,
+			.elsewhere {
+				margin-bottom: 1.5em;
+			}
+			.social a {
+				margin-left: .5rem;
+				margin-right: .5rem !important;
+			}
+			form input[type="text"] {
+				text-align: left;
+				padding-bottom: .5em;
+			}
+		}
+
+		article {
+			padding: 2.5em;
+			h1 {
+				margin-top: 0;
+				margin-bottom: 1em;
+				font-size: 1.5em;
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+

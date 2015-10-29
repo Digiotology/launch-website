@@ -129,8 +129,19 @@
 					h2 {
 						margin-bottom: 0;
 					}
-					&.active h2 {
-						color: $secondary !important;
+					&.active {
+						svg {
+							path,
+							g,
+							line,
+							circle,
+							polyline { 
+								stroke: $secondary;
+							}
+						}
+						h2 {
+							color: $secondary !important;
+						}
 					}
 				}
 			}
@@ -160,12 +171,14 @@
 			@include outer-container;
 			padding: 0 $padding;
 			li {
-				margin-bottom: $padding * 2;
+				padding: $padding * 1.5 0;
 				display: flex;
+				border-bottom: 1px solid $accent;
 				.content {
-					width: 70%;
+					width: 80%;
 					h2 {
 						margin: 0;
+						@include transition;
 					}
 					h3 {
 						margin: 0.5em 0;
@@ -177,12 +190,24 @@
 					}
 				}
 				.icon {
-					width: 30%;
+					width: 20%;
 					display: flex;
 					align-items: center;
 					justify-content: flex-end;
 					img {
 						height: 125px;
+					}
+					svg {
+						height: 125px;
+						path,
+						g,
+						line,
+						circle,
+						polyline,
+						polygon { 
+							stroke: $grey-dark;
+							@include transition;
+						}
 					}
 				}
 				&:nth-child(even) {
@@ -192,6 +217,28 @@
 					.icon {
 						order: 1;
 						justify-content: flex-start;
+					}
+				}
+				&:last-child {
+					border: 0;
+				}
+				&.active {
+					.content h2 {
+						color: $accent;
+						@include transition;
+					}
+					.icon {
+						svg {
+							path,
+							g,
+							line,
+							circle,
+							polyline,
+							polygon { 
+								stroke: $secondary;
+								@include transition;
+							}
+						}
 					}
 				}
 			}
@@ -212,6 +259,10 @@
 			}
 			.contact {
 				@include span-columns(7 of 12);
+			}
+			address,
+			.direct a {
+				line-height: 2;
 			}
 			h1 {
 				font-size: 1.5em;
@@ -245,13 +296,14 @@
 					&:focus {
 						border-color: $accent;
 					}
-					&[type="submit"] {
-						background: $accent;
-						color: white;
-						font-family: "Montserrat", sans-serif;
-						padding: 0.5em;
-						border: none;
-					}
+				}
+				button {
+					@extend input;
+					background: $accent;
+					color: white;
+					font-family: "Montserrat", sans-serif;
+					padding: 0.5em;
+					border: none;
 				}
 			}
 		}
@@ -310,6 +362,20 @@
 					&:last-child {
 						margin-bottom: 0;
 					}
+					&.active {
+						svg {
+							path,
+							g,
+							line,
+							circle,
+							polyline { 
+								stroke: $grey-dark;
+							}
+						}
+						h2 {
+							color: $grey-dark !important;
+						}
+					}
 				}
 			}
 			.content {
@@ -333,6 +399,12 @@
 						h2 {
 							margin-top: 1em;
 						}
+						h3 {
+							margin: 2em 0;
+						}
+					}
+					&:first-child {
+						padding-top: 0;
 					}
 				}
 			}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="64px" height="64px" viewBox="486 2121 64 64" overflow="visible" enable-background="new 486 2121 64 64"
+	 xml:space="preserve">
+<defs>
+</defs>
+<rect display="none" fill="#F1F2F2" width="590" height="7500"/>
+<rect x="486" y="2121" display="none" fill="#A7A9AC" width="64" height="64"/>
+<polygon fill="none" stroke="#414042" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	548,2125 488.333,2146.332 506,2156 509,2181 520,2163 542,2176 "/>
+<polyline fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	510,2153 544,2130 520,2158 "/>
+<line fill="none" stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="510" y1="2182" x2="525" y2="2166"/>
+</svg>

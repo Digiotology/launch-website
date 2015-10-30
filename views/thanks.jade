@@ -1,0 +1,52 @@
+extends layout
+
+block content
+
+	#top
+
+	#hero
+		a.nn(href="http://nimbusninety.com", target="_blank"): img(src="img/brand/nimbus-logo-icon.png")
+		.wrapper
+			img.logo(src="img/brand/logo-icon.png", alt="Digiotology Logo Icon")
+			h1 Thank you very much for getting in touch. One of our team will be in touch shortly.
+
+	#back
+		a(href="/") Head back to the front page
+
+	#footer
+		ul
+			.addresses
+				h1 Pay us a visit
+				li.london
+					h2 London
+					address
+						| 17 Grosvenor Gardens<br>Victoria<br>London<br>SW1W 0BD 
+				li
+					h2 Birmingham
+					address
+						| 28D Ludgate Hill<br>Jewellery Quarter<br>Birmingham<br>B3 1DX
+			.contact
+				h1 Get in touch
+				li.elsewhere
+					h2 Elsewhere
+					.direct
+						a(href="tel:+441212330791") +44 (0)121 233 0791
+						a(href="mailto:enquiries@digiotology.com") enquiries@digiotology.com
+					.social
+						a(href="http://facebook.com/digiotology"): i.fa.fa-facebook-square
+						a(href="http://twitter.com/digiotology"): i.fa.fa-twitter-square
+						a(href="https://www.linkedin.com/company/10164843"): i.fa.fa-linkedin-square
+				li
+					h2 We'll call you!
+					form(action='//flipmail.co/api/JZknPyAMfrRA8dWmfKWq', method='post')
+						input(type='text', name='name', placeholder='Full Name')
+						input(type='text', name='org', placeholder='Organisation')
+						input(type='text', name='topic', placeholder='What about?')
+						input(type='number', name='phone', placeholder='Phone Number')
+						input(type="hidden", name="_after", value="http://digiotology.com/thanks")
+						button(type='submit') Go
+
+
+					
+		#links: p
+			| &copy; Digiotology Ltd

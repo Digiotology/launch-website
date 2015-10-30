@@ -189,7 +189,6 @@
 						font-family: "Roboto", sans-serif
 					}
 					p {
-						font-size: 0.8em;
 						margin: 0;
 					}
 				}
@@ -326,6 +325,14 @@
 		h1 {
 			margin-bottom: 2.5em;
 		}
+	}
+
+	#back a {
+		@include outer-container;
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-size: 2em;
+		margin-top: 5rem;
 	}
 
 	@media screen and (max-width: 680px) {

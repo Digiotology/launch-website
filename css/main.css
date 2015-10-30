@@ -596,7 +596,6 @@ a {
         margin: 0.5em 0;
         font-family: "Roboto", sans-serif; }
       #process ul li .content p {
-        font-size: 0.8em;
         margin: 0; }
     #process ul li .icon {
       width: 20%;
@@ -730,6 +729,20 @@ article {
     display: table; }
   article h1 {
     margin-bottom: 2.5em; }
+
+#back a {
+  max-width: 64rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  margin-top: 5rem; }
+  #back a::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 @media screen and (max-width: 680px) {
   #hero {

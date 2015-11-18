@@ -72,3 +72,9 @@ $.each(inViewClasses, function(i, itemClass) {
 		}
 	});
 });
+
+$(".testimonial cite span").magnificPopup({ items: { src: "https://www.youtube.com/watch?v=F2ttPsFtemI" }, type: 'iframe' });
+
+
+
+

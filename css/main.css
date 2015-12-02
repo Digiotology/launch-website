@@ -868,6 +868,28 @@ img.mfp-img {
     top: 1em;
     left: 1em;
     height: 2em; }
+  #hero a.community {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: white;
+    text-decoration: none;
+    background: #05bcd9;
+    padding: 0.25em 0.75em; }
+    #hero a.community i {
+      color: white;
+      font-size: 0.8em;
+      margin-left: 0.25em;
+      margin-right: 0.5em;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+    #hero a.community:hover i {
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      margin-left: 0.75em;
+      margin-right: 0; }
   #hero .logo {
     display: block;
     margin: 0 auto; }
@@ -953,9 +975,14 @@ img.mfp-img {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 31.76157%; }
+        width: 31.76157%;
+        margin-top: 1.5em; }
         #why ul nav li:last-child {
           margin-right: 0; }
+        #why ul nav li:nth-child(3n) {
+          margin-right: 0; }
+        #why ul nav li:nth-child(3n+1) {
+          clear: left; }
         #why ul nav li h2 {
           margin-bottom: 0; }
         #why ul nav li.active svg path,
@@ -1049,6 +1076,16 @@ img.mfp-img {
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s; }
+
+iframe {
+  max-width: 64rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  iframe::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 #footer {
   max-width: 64rem;

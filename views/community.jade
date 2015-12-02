@@ -1,0 +1,44 @@
+extends layout
+
+block content
+	#hero
+		.wrapper
+			img.logo(src="img/brand/logo-icon.png", alt="Digiotology Logo Icon")
+			h1 We give our community opportunities to innovate with some of the largest companies in the world.
+
+	#home-about
+		:marked
+			Our community is made up of some of the best developers, designers, analysts, researchers, data scientists and electronic engineers in the UK and beyond! Once accepted, you will recieve the chance to apply for exciting projects with organisations from all sectors.
+
+	#navbar
+		.wrapper
+			a.logo(href="/")
+				img(src="img/brand/logo-horizontal-white.png", alt="Digiotology Logo White")
+			ul
+				li: a(href="#for-you") For you
+				li: a(href="#apply") Apply
+
+	#why
+		h1 What's in it for you?
+		ul
+			nav
+				li#connect.active
+					img(src="img/icons/connections.svg", class="svg")
+					h2 Exciting Brands
+				li#voice
+					img(src="img/icons/voice.svg", class="svg")
+					h2 Skills Building
+				li#xp
+					img(src="img/icons/experiences.svg", class="svg")
+					h2 Community
+			.content
+				li#connect.active
+					p Digiotology consistently bring together the right mix of people and facilitate meaningful connections and collaboration. Many of the organisations we work with are in the FTSE 100, and our community enjoy the diversity of the clients which we introduce them to.
+				li#voice
+					p We run many different types of innovation projects, from enablement workshops to hackathons. Whatever the project, we invest in enhancing the skills of our community and giving you the opportunity to solve real challenges quickly.
+				li#xp
+					p This is more than a contracting network - this is a community of skilled technologists and strategists that you can be part of. We run meetups, breakfasts and dinners which you will be invited to, and fun events to socialise at.
+
+	#apply
+	<div class="typeform-widget" data-url="https://digiotology.typeform.com/to/IyrpTk" data-text="Membership Application" style="width:100%;height:500px;"></div>
+	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>

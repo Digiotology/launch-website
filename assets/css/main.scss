@@ -57,6 +57,29 @@
 			left: 1em;
 			height: 2em;
 		}
+		a.community {
+			position: absolute;
+			top: 1em;
+			right: 1em;
+			color: white;
+			text-decoration: none;
+			background: $blue;
+			padding: 0.25em 0.75em;
+			i {
+				color: white;
+				font-size: 0.8em;
+				margin-left: 0.25em;
+				margin-right: 0.5em;
+				@include transition;
+			}
+			&:hover {
+				i {
+					@include transition;
+					margin-left: 0.75em;
+					margin-right: 0;
+				}
+			}
+		}
 		.logo {
 			display: block;
 			margin: 0 auto;
@@ -128,8 +151,9 @@
 				@include span-columns(12);
 				li {
 					@include span-columns(4 of 12);
+					@include omega(3n);
+					margin-top: 1.5em;
 					img {
-
 					}
 					h2 {
 						margin-bottom: 0;
@@ -247,6 +271,10 @@
 				}
 			}
 		}
+	}
+
+	iframe {
+		@include outer-container;
 	}
 
 	#footer {

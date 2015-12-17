@@ -931,6 +931,7 @@ img.mfp-img {
     text-align: center;
     font-size: 2.25em; }
   #hero.community {
+    padding: 10rem 2.5rem;
     background: linear-gradient(to top, white, rgba(255, 255, 255, 0.25)), url(../img/pages/community/hero.jpg); }
 
 #home-about {

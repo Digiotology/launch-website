@@ -1523,6 +1523,8 @@ article {
       #data-science #get-in-touch form input:focus, #data-science #get-in-touch form #hero .btn-wrapper a.btn:focus, #data-science #hero .btn-wrapper #get-in-touch form a.btn:focus, #data-science #get-in-touch form a.download:focus,
       #data-science #get-in-touch form textarea:focus {
         border-color: #522f91; }
+    #data-science #get-in-touch form ul.hs-error-msgs {
+      display: none !important; }
     #data-science #get-in-touch form label {
       text-align: left !important;
       float: left;

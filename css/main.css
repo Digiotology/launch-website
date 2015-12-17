@@ -216,10 +216,10 @@ samp {
  */
 button,
 input,
-#footer ul form button,
+li.callback form input[type="submit"],
 #data-science #hero .btn-wrapper a.btn,
 #data-science #get-in-touch a.download,
-#data-science #get-in-touch form button,
+#data-science #get-in-touch form input[type="submit"],
 optgroup,
 select,
 textarea {
@@ -257,24 +257,24 @@ select {
  */
 button,
 html input[type="button"],
-html #footer ul form button[type="button"], #footer ul form
-html button[type="button"],
+html li.callback form input[type="button"][type="submit"], li.callback form
+html input[type="button"][type="submit"],
 html #data-science #hero .btn-wrapper a[type="button"].btn, #data-science #hero .btn-wrapper
 html a[type="button"].btn,
 html #data-science #get-in-touch a[type="button"].download, #data-science #get-in-touch
 html a[type="button"].download,
-html #data-science #get-in-touch form button[type="button"], #data-science #get-in-touch form
-html button[type="button"],
+html #data-science #get-in-touch form input[type="button"][type="submit"], #data-science #get-in-touch form
+html input[type="button"][type="submit"],
 input[type="reset"],
-#footer ul form button[type="reset"],
+li.callback form input[type="reset"][type="submit"],
 #data-science #hero .btn-wrapper a[type="reset"].btn,
 #data-science #get-in-touch a[type="reset"].download,
-#data-science #get-in-touch form button[type="reset"],
+#data-science #get-in-touch form input[type="reset"][type="submit"],
 input[type="submit"],
-#footer ul form button[type="submit"],
+li.callback form input[type="submit"],
 #data-science #hero .btn-wrapper a[type="submit"].btn,
 #data-science #get-in-touch a[type="submit"].download,
-#data-science #get-in-touch form button[type="submit"] {
+#data-science #get-in-touch form input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -285,14 +285,14 @@ input[type="submit"],
  */
 button[disabled],
 html input[disabled],
-html #footer ul form button[disabled], #footer ul form
-html button[disabled],
+html li.callback form input[disabled][type="submit"], li.callback form
+html input[disabled][type="submit"],
 html #data-science #hero .btn-wrapper a[disabled].btn, #data-science #hero .btn-wrapper
 html a[disabled].btn,
 html #data-science #get-in-touch a[disabled].download, #data-science #get-in-touch
 html a[disabled].download,
-html #data-science #get-in-touch form button[disabled], #data-science #get-in-touch form
-html button[disabled] {
+html #data-science #get-in-touch form input[disabled][type="submit"], #data-science #get-in-touch form
+html input[disabled][type="submit"] {
   cursor: default; }
 
 /**
@@ -300,10 +300,10 @@ html button[disabled] {
  */
 button::-moz-focus-inner,
 input::-moz-focus-inner,
-#footer ul form button::-moz-focus-inner,
+li.callback form input[type="submit"]::-moz-focus-inner,
 #data-science #hero .btn-wrapper a.btn::-moz-focus-inner,
 #data-science #get-in-touch a.download::-moz-focus-inner,
-#data-science #get-in-touch form button::-moz-focus-inner {
+#data-science #get-in-touch form input[type="submit"]::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -311,7 +311,7 @@ input::-moz-focus-inner,
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-input, #footer ul form button, #data-science #hero .btn-wrapper a.btn, #data-science #get-in-touch a.download, #data-science #get-in-touch form button {
+input, li.callback form input[type="submit"], #data-science #hero .btn-wrapper a.btn, #data-science #get-in-touch a.download, #data-science #get-in-touch form input[type="submit"] {
   line-height: normal; }
 
 /**
@@ -319,12 +319,12 @@ input, #footer ul form button, #data-science #hero .btn-wrapper a.btn, #data-sci
  * 2. Remove excess padding in IE 8/9/10.
  *  Known issue: excess padding remains in IE 6.
  */
-input[type="checkbox"], #footer ul form button[type="checkbox"], #data-science #hero .btn-wrapper a[type="checkbox"].btn, #data-science #get-in-touch a[type="checkbox"].download, #data-science #get-in-touch form button[type="checkbox"],
+input[type="checkbox"], li.callback form input[type="checkbox"][type="submit"], #data-science #hero .btn-wrapper a[type="checkbox"].btn, #data-science #get-in-touch a[type="checkbox"].download, #data-science #get-in-touch form input[type="checkbox"][type="submit"],
 input[type="radio"],
-#footer ul form button[type="radio"],
+li.callback form input[type="radio"][type="submit"],
 #data-science #hero .btn-wrapper a[type="radio"].btn,
 #data-science #get-in-touch a[type="radio"].download,
-#data-science #get-in-touch form button[type="radio"] {
+#data-science #get-in-touch form input[type="radio"][type="submit"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -335,19 +335,19 @@ input[type="radio"],
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button, #footer ul form button[type="number"]::-webkit-inner-spin-button, #data-science #hero .btn-wrapper a[type="number"].btn::-webkit-inner-spin-button, #data-science #get-in-touch a[type="number"].download::-webkit-inner-spin-button, #data-science #get-in-touch form button[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button, li.callback form input[type="number"][type="submit"]::-webkit-inner-spin-button, #data-science #hero .btn-wrapper a[type="number"].btn::-webkit-inner-spin-button, #data-science #get-in-touch a[type="number"].download::-webkit-inner-spin-button, #data-science #get-in-touch form input[type="number"][type="submit"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button,
-#footer ul form button[type="number"]::-webkit-outer-spin-button,
+li.callback form input[type="number"][type="submit"]::-webkit-outer-spin-button,
 #data-science #hero .btn-wrapper a[type="number"].btn::-webkit-outer-spin-button,
 #data-science #get-in-touch a[type="number"].download::-webkit-outer-spin-button,
-#data-science #get-in-touch form button[type="number"]::-webkit-outer-spin-button {
+#data-science #get-in-touch form input[type="number"][type="submit"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type="search"], #footer ul form button[type="search"], #data-science #hero .btn-wrapper a[type="search"].btn, #data-science #get-in-touch a[type="search"].download, #data-science #get-in-touch form button[type="search"] {
+input[type="search"], li.callback form input[type="search"][type="submit"], #data-science #hero .btn-wrapper a[type="search"].btn, #data-science #get-in-touch a[type="search"].download, #data-science #get-in-touch form input[type="search"][type="submit"] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
@@ -358,12 +358,12 @@ input[type="search"], #footer ul form button[type="search"], #data-science #hero
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button, #footer ul form button[type="search"]::-webkit-search-cancel-button, #data-science #hero .btn-wrapper a[type="search"].btn::-webkit-search-cancel-button, #data-science #get-in-touch a[type="search"].download::-webkit-search-cancel-button, #data-science #get-in-touch form button[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-cancel-button, li.callback form input[type="search"][type="submit"]::-webkit-search-cancel-button, #data-science #hero .btn-wrapper a[type="search"].btn::-webkit-search-cancel-button, #data-science #get-in-touch a[type="search"].download::-webkit-search-cancel-button, #data-science #get-in-touch form input[type="search"][type="submit"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration,
-#footer ul form button[type="search"]::-webkit-search-decoration,
+li.callback form input[type="search"][type="submit"]::-webkit-search-decoration,
 #data-science #hero .btn-wrapper a[type="search"].btn::-webkit-search-decoration,
 #data-science #get-in-touch a[type="search"].download::-webkit-search-decoration,
-#data-science #get-in-touch form button[type="search"]::-webkit-search-decoration {
+#data-science #get-in-touch form input[type="search"][type="submit"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -930,6 +930,8 @@ img.mfp-img {
   #hero h1 {
     text-align: center;
     font-size: 2.25em; }
+  #hero.community {
+    background: linear-gradient(to top, white, rgba(255, 255, 255, 0.25)), url(../img/pages/community/hero.jpg); }
 
 #home-about {
   max-width: 64rem;
@@ -1185,22 +1187,6 @@ iframe {
     display: inline-block;
     margin-right: 1rem;
     font-size: 1.5em; }
-  #footer ul form input, #footer ul form button, #footer ul form #data-science #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper #footer ul form a.btn, #footer ul form #data-science #get-in-touch a.download, #data-science #get-in-touch #footer ul form a.download, #footer ul #data-science #get-in-touch form button, #data-science #get-in-touch #footer ul form button {
-    border: 0;
-    outline: 0;
-    border-bottom: 2px solid #F3F3F3;
-    margin-bottom: 1em;
-    padding-bottom: 0.25em;
-    display: block;
-    width: 100%; }
-    #footer ul form input:focus, #footer ul form button:focus, #footer ul form #data-science #hero .btn-wrapper a.btn:focus, #data-science #hero .btn-wrapper #footer ul form a.btn:focus, #footer ul form #data-science #get-in-touch a.download:focus, #data-science #get-in-touch #footer ul form a.download:focus, #footer ul #data-science #get-in-touch form button:focus, #data-science #get-in-touch #footer ul form button:focus {
-      border-color: #522f91; }
-  #footer ul form button {
-    background: #522f91;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    padding: 0.5em;
-    border: none; }
   #footer #links p {
     float: left;
     display: block;
@@ -1211,6 +1197,42 @@ iframe {
     font-size: 0.8em; }
     #footer #links p:last-child {
       margin-right: 0; }
+
+li.callback {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  li.callback:last-child {
+    margin-right: 0; }
+  li.callback form {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    li.callback form:last-child {
+      margin-right: 0; }
+    li.callback form label {
+      font-size: 0.8em;
+      font-style: italic; }
+    li.callback form input, li.callback form input[type="submit"], li.callback form #data-science #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper li.callback form a.btn, li.callback form #data-science #get-in-touch a.download, #data-science #get-in-touch li.callback form a.download, li.callback #data-science #get-in-touch form input[type="submit"], #data-science #get-in-touch li.callback form input[type="submit"] {
+      border: 0;
+      outline: 0;
+      border-bottom: 2px solid #F3F3F3;
+      margin-bottom: 1em;
+      padding-bottom: 0.25em;
+      display: block;
+      width: 100%; }
+      li.callback form input:focus, li.callback form #data-science #hero .btn-wrapper a.btn:focus, #data-science #hero .btn-wrapper li.callback form a.btn:focus, li.callback form #data-science #get-in-touch a.download:focus, #data-science #get-in-touch li.callback form a.download:focus, li.callback #data-science #get-in-touch form input[type="submit"]:focus, #data-science #get-in-touch li.callback form input[type="submit"]:focus {
+        border-color: #522f91; }
+    li.callback form input[type="submit"], li.callback form #data-science #hero .btn-wrapper a[type="submit"].btn, #data-science #hero .btn-wrapper li.callback form a[type="submit"].btn, li.callback form #data-science #get-in-touch a[type="submit"].download, #data-science #get-in-touch li.callback form a[type="submit"].download, li.callback #data-science #get-in-touch form input[type="submit"], #data-science #get-in-touch li.callback form input[type="submit"] {
+      background: #522f91;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      padding: 0.5em;
+      border: none; }
+    li.callback form ul.hs-error-msgs {
+      display: none !important; }
 
 article {
   max-width: 64rem;
@@ -1332,7 +1354,7 @@ article {
     #footer .social a {
       margin-left: .5rem;
       margin-right: .5rem !important; }
-    #footer form input[type="text"], #footer ul form button[type="text"], #footer form #data-science #hero .btn-wrapper a[type="text"].btn, #data-science #hero .btn-wrapper #footer form a[type="text"].btn, #footer form #data-science #get-in-touch a[type="text"].download, #data-science #get-in-touch #footer form a[type="text"].download, #footer #data-science #get-in-touch form button[type="text"], #data-science #get-in-touch #footer form button[type="text"] {
+    #footer form input[type="text"], #footer form #data-science #hero .btn-wrapper a[type="text"].btn, #data-science #hero .btn-wrapper #footer form a[type="text"].btn, #footer form #data-science #get-in-touch a[type="text"].download, #data-science #get-in-touch #footer form a[type="text"].download, #footer #data-science #get-in-touch form input[type="text"][type="submit"], #data-science #get-in-touch #footer form input[type="text"][type="submit"] {
       text-align: left;
       padding-bottom: .5em; }
   article {
@@ -1478,18 +1500,18 @@ article {
     margin-left: 34.11922%; }
     #data-science #get-in-touch form:last-child {
       margin-right: 0; }
-    #data-science #get-in-touch form input, #data-science #get-in-touch form #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper #get-in-touch form a.btn, #data-science #get-in-touch form a.download, #data-science #get-in-touch form button,
+    #data-science #get-in-touch form input, #data-science #get-in-touch form #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper #get-in-touch form a.btn, #data-science #get-in-touch form a.download, #data-science #get-in-touch form input[type="submit"],
     #data-science #get-in-touch form textarea,
     #data-science #get-in-touch form button {
       float: left;
       display: block;
       margin-right: 7.42297%;
       width: 100%; }
-      #data-science #get-in-touch form input:last-child, #data-science #get-in-touch form #hero .btn-wrapper a.btn:last-child, #data-science #hero .btn-wrapper #get-in-touch form a.btn:last-child, #data-science #get-in-touch form a.download:last-child, #data-science #get-in-touch form button:last-child,
+      #data-science #get-in-touch form input:last-child, #data-science #get-in-touch form #hero .btn-wrapper a.btn:last-child, #data-science #hero .btn-wrapper #get-in-touch form a.btn:last-child, #data-science #get-in-touch form a.download:last-child,
       #data-science #get-in-touch form textarea:last-child,
       #data-science #get-in-touch form button:last-child {
         margin-right: 0; }
-    #data-science #get-in-touch form input, #data-science #get-in-touch form #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper #get-in-touch form a.btn, #data-science #get-in-touch form a.download, #data-science #get-in-touch form button,
+    #data-science #get-in-touch form input, #data-science #get-in-touch form #hero .btn-wrapper a.btn, #data-science #hero .btn-wrapper #get-in-touch form a.btn, #data-science #get-in-touch form a.download, #data-science #get-in-touch form input[type="submit"],
     #data-science #get-in-touch form textarea {
       border: 0;
       outline: 0;
@@ -1498,10 +1520,15 @@ article {
       padding-bottom: 0.25em;
       display: block;
       width: 100%; }
-      #data-science #get-in-touch form input:focus, #data-science #get-in-touch form #hero .btn-wrapper a.btn:focus, #data-science #hero .btn-wrapper #get-in-touch form a.btn:focus, #data-science #get-in-touch form a.download:focus, #data-science #get-in-touch form button:focus,
+      #data-science #get-in-touch form input:focus, #data-science #get-in-touch form #hero .btn-wrapper a.btn:focus, #data-science #hero .btn-wrapper #get-in-touch form a.btn:focus, #data-science #get-in-touch form a.download:focus,
       #data-science #get-in-touch form textarea:focus {
         border-color: #522f91; }
-    #data-science #get-in-touch form button {
+    #data-science #get-in-touch form label {
+      text-align: left !important;
+      float: left;
+      font-size: 0.8em;
+      font-style: italic; }
+    #data-science #get-in-touch form #hero .btn-wrapper a[type="submit"].btn, #data-science #hero .btn-wrapper #get-in-touch form a[type="submit"].btn, #data-science #get-in-touch form a[type="submit"].download, #data-science #get-in-touch form input[type="submit"] {
       background: #522f91;
       color: white;
       font-family: "Montserrat", sans-serif;

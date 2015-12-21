@@ -1568,3 +1568,6 @@ article {
     list-style-type: none; }
     #blog-posts ul li a {
       text-decoration: none; }
+
+article img:not(.floated) {
+  width: 100%; }

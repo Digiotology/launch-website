@@ -1,0 +1,154 @@
+#data-science {
+	#hero .btn-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		a.btn {
+			@extend input;
+			background: $accent;
+			color: white;
+			font-family: "Montserrat", sans-serif;
+			padding: 1em;
+			border: none;
+			text-decoration: none;
+			cursor: pointer;
+			outline: 0;
+			text-align: center;
+			&:hover {
+				background: darken($accent, 10%);
+			}
+		}
+	}
+	.intro strong {
+		@extend %font-head;
+	}
+	#why {
+		@media screen and (max-width: $tablet) {
+			display: none;
+		}
+	}
+	#platform {
+		@include outer-container;
+		img {
+			@include span-columns(6 of 12);
+			@include shift(3);
+		}
+		@media screen and (max-width: $tablet) {
+			img {
+				margin-bottom: 3rem;
+				@include span-columns(10 of 12);
+				@include shift(1);
+			}
+		}
+	}
+	#features,
+	#get-in-touch,
+	#workshops {
+		@include outer-container;
+		padding: 0 2.5em;
+		h1.section-title {
+			text-align: center;
+		}
+	}
+	#features {
+		ul {
+			padding-left: 0;
+			@include span-columns(12);
+			margin-bottom: 2em;
+			li {
+				@include span-columns(4 of 12);
+				@include omega(3n);
+				background: $blue;
+				color: white;
+				text-align: center;
+				padding: 1em;
+				margin-bottom: 1.5em;
+			}
+		}
+		@media screen and (max-width: $tablet) {
+			ul li {
+				@include span-columns(12 of 12);
+			}
+		}
+	}
+	#get-in-touch {
+		text-align: center;
+		.link {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+		}
+		a.download {
+			@extend input;
+			background: $accent;
+			color: white;
+			font-family: "Montserrat", sans-serif;
+			padding: 1em;
+			border: none;
+			text-decoration: none;
+			cursor: pointer;
+			&:hover {
+				background: darken($accent, 10%);
+			}
+		}
+		small {
+			margin-top: 2.25em;
+			margin-bottom: 2.25em;
+			display: block;
+			font-style: italic;
+			&:before,
+			&:after {
+				content: "-";
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+		}
+		form {
+			@include span-columns(4 of 12);
+			@include shift(4 of 12);
+			input,
+			textarea,
+			button {
+				@include span-columns(4 of 4);
+			}
+			input,
+			textarea {
+				border: 0;
+				outline: 0;
+				border-bottom:2px solid $grey-light;
+				margin-bottom: 1em;
+				padding-bottom:0.25em;
+				display: block;
+				width: 100%;
+				&:focus {
+					border-color: $accent;
+				}
+			}
+			ul.hs-error-msgs {
+				display: none !important;
+			}
+			label {
+				text-align: left !important;
+				float: left;
+				font-size: 0.8em;
+				font-style: italic;
+			}
+			input[type="submit"] {
+				@extend input;
+				background: $accent;
+				color: white;
+				font-family: "Montserrat", sans-serif;
+				padding: 1em;
+				border: none;
+			}
+			@media screen and (max-width: $tablet) {
+				@include span-columns(10 of 12);
+				@include shift(1);
+			}
+		}
+	}
+	#workshops {
+		margin-bottom: 3em;
+		text-align: center;
+	}
+}

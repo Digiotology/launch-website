@@ -74,7 +74,7 @@ $.each(inViewClasses, function(i, itemClass) {
 });
 
 $(".testimonial cite span").magnificPopup({ items: { src: "https://www.youtube.com/watch?v=F2ttPsFtemI" }, type: 'iframe' });
-
+$("#data-science #hero a.btn").magnificPopup({ items: { src: "https://www.youtube.com/watch?v=F2ttPsFtemI" }, type: 'iframe' });
 
 
 

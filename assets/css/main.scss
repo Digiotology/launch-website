@@ -57,6 +57,7 @@
 			left: 1em;
 			height: 2em;
 		}
+
 		a.community {
 			position: absolute;
 			top: 1em;
@@ -83,11 +84,20 @@
 		.logo {
 			display: block;
 			margin: 0 auto;
+			margin-bottom: 1em;
 		}
 		h1 {
-			margin-top: 1em;
 			text-align: center;
 			font-size: 2.25em;
+		}
+		&.community {
+			padding: $padding * 4 $padding;
+			background: 
+				linear-gradient(
+					to top,
+					rgba(white, 1),
+					rgba(white, 0.25)),
+					url(../img/pages/community/hero.jpg);
 		}
 	}
 
@@ -172,6 +182,13 @@
 							color: $secondary !important;
 						}
 					}
+				}
+			}
+			&.four {
+				nav li {
+					@include span-columns(3 of 12);
+					@include omega-reset(3n);
+					@include omega(4n);
 				}
 			}
 			.content {
@@ -316,28 +333,6 @@
 				margin-right: 1rem;
 				font-size: 1.5em;
 			}
-			form {
-				input {
-					border: 0;
-					outline: 0;
-					border-bottom:2px solid $grey-light;
-					margin-bottom: 1em;
-					padding-bottom:0.25em;
-					display: block;
-					width: 100%;
-					&:focus {
-						border-color: $accent;
-					}
-				}
-				button {
-					@extend input;
-					background: $accent;
-					color: white;
-					font-family: "Montserrat", sans-serif;
-					padding: 0.5em;
-					border: none;
-				}
-			}
 		}
 		#links p {
 			@include span-columns(12);
@@ -346,13 +341,46 @@
 			font-size: 0.8em;
 		}
 	}
+	li.callback {
+		@include span-columns(12);
+		form {
+			@include span-columns(12);
+			label {
+				font-size: 0.8em;
+				font-style: italic;
+			}
+			input {
+				border: 0;
+				outline: 0;
+				border-bottom:2px solid $grey-light;
+				margin-bottom: 1em;
+				padding-bottom:0.25em;
+				display: block;
+				width: 100%;
+				&:focus {
+					border-color: $accent;
+				}
+			}
+			input[type="submit"] {
+				@extend input;
+				background: $accent;
+				color: white;
+				font-family: "Montserrat", sans-serif;
+				padding: 0.5em;
+				border: none;
+			}
+			ul.hs-error-msgs {
+				display: none !important;
+			}
+		}
+	}
 
 	article {
 		@include outer-container;
-		padding: 5em;
+		padding: 2em;
 		line-height: 2;
 		h1 {
-			margin-bottom: 2.5em;
+			margin-bottom: 1.5em;
 		}
 	}
 
@@ -502,11 +530,7 @@
 
 	}
 
+@import "pages/data-science/main";
 
-
-
-
-
-
-
+@import "pages/blog/main";
 

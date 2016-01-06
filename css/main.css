@@ -1563,11 +1563,22 @@ article {
     display: table; }
   #blog-posts h1 {
     margin-bottom: 1.5em; }
+  #blog-posts h2 {
+    margin-bottom: 0; }
+  #blog-posts h3 {
+    margin-top: 0; }
   #blog-posts ul {
     padding-left: 0;
     list-style-type: none; }
     #blog-posts ul li a {
       text-decoration: none; }
+
+article h1.title {
+  margin-bottom: 0; }
+
+article h2.date {
+  margin-top: 0;
+  margin-bottom: 3rem; }
 
 article img:not(.floated) {
   width: 100%; }
